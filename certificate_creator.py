@@ -24,7 +24,7 @@ for i in name_list:
     text_color = (0, 137, 209)
     font = ImageFont.truetype("ITCBLKAD.ttf", 90)
     d.text(location, i_edited, fill =29, font=font)
-    im.save("certificate_" + i + ".pdf")
+    im.save("certificate_" + i + ".pdf")  #Saves as pdf
 
 
 #--------------------------------------------------------------------------------------------------------------------
