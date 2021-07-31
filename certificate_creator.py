@@ -1,5 +1,13 @@
 import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
+import qrcode
+
+
+#--------------------------------------------------------------------------------------------------------------------
+#-------------THIS SECTION OF CODE GENERATES QR-CODE AND SAVES AS AN IMAGE WCHICH WILL BE ATTACHED TO THE CERTIFICATE--
+# image = qrcode.make(input("Write Your message: "))
+# image.save("qrcode.jpg")
+
 
 
 #--------------------------------------------------------------------------------------------------------------------
@@ -33,4 +41,6 @@ for i in name_list:
 # out = Image.open('CERTIFICATE2.png')  #background image where other image is being attached
 # out.paste(img_to_paste, (2963, 335))  # the second argument here is tuple representing upper left corner
 # out.save('CERTIFICATE4.png')  #Finally generated image
+
+
 
