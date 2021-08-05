@@ -16,13 +16,13 @@ data = pd.read_excel(r'C:/Users/MO_WIZZ/Documents/Python_Project/Certificate_cre
 name_list = data["NAME"].tolist()
 # print(name_list)
 for i in name_list:
-    i_edited = i.replace(" ","    ")  #Adding more spaces between surname and firstname
+    i_edited = i.replace(" ","  ")  #Adding more spaces between surname and firstname
     # print(i)
     im = Image.open(r'C:/Users/MO_WIZZ/Documents/Python_Project/Certificate_creator/CERTIFICATE2.jpg')
     d = ImageDraw.Draw(im)
-    location = (1260, 1125)  #x, y
+    location = (1150, 1070)  #x, y
     text_color = (0, 137, 209)
-    font = ImageFont.truetype("ITCBLKAD.ttf", 90)
+    font = ImageFont.truetype("ITCBLKAD.ttf", 150)
     d.text(location, i_edited, fill =29, font=font)
     im.save("certificate_" + i + ".pdf")  #Saves as pdf
 
